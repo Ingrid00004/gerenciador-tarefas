@@ -2,7 +2,6 @@ Gerenciador de Tarefas
 
 Aplicação web para gerenciar tarefas do dia a dia, com cadastro de usuários e API REST.
 
-
 Requisitos
 
 • PHP 8+
@@ -10,7 +9,6 @@ Requisitos
 • Composer
 
 • XAMPP (MySQL \+ phpMyAdmin)
-
 
 Como rodar
 
@@ -50,7 +48,6 @@ CREATE TABLE tarefas (
 
 );
 
-
 2\. Backend
 
 cd minha-api
@@ -60,7 +57,6 @@ composer install
 php \-S localhost:8080 \-t public
 
 API disponível em “[http://localhost:8080](http://localhost:8080)”.
-
 
 3\. Frontend
 
@@ -74,15 +70,15 @@ minha-api/
 
 ├── public/
 
-│   	└── index.php
+│      └── index.php
 
 ├── src/
 
-│   ├── routes.php
+│      ├── routes.php
 
-│   └── config/
+│      └── config/
 
-│       	  └── database.php
+│       	     └── database.php
 
 └── vendor/
 
@@ -98,10 +94,10 @@ frontend/
 
 └── css/
 
-	├── cadastro.css
+│       ├── cadastro.css
 
-	├── login.css
+│       ├── login.css
 
-	├── nova.css
+│       ├── nova.css
 
-	└── tarefas.css
+│       └── tarefas.css
