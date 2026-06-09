@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+header{
+    background-color: #8400ff;
+    color: white;
+
+    padding: 20px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size: 24px;
+}
+
+.header-botoes{
+    display: flex;
+    gap: 12px;
+}
+
+.btn-nova-tarefa{
+    background-color: white;
+    color: #8400ff;
+
+    border: none;
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn-nova-tarefa:hover{
+    background-color: #f3e8ff;
+}
+
+.btn-sair{
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn-sair:hover{
+    background-color: rgba(255,255,255,0.15);
+}
+
+main{
+    padding: 30px 32px;
+}
+
+.titulo-lista{
+    font-size: 20px;
+    color: #333;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #dcdcdc;
+
+    padding-bottom: 10px;
+}
+
+.concluida{
+    margin-top: 60px;
+}
+
+.lista-tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.tarefa{
+    background-color: white;
+
+    padding: 18px 22px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-tarefa{
+    flex: 1;
+}
+
+.conteudo-tarefa h3{
+    color: #222;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.conteudo-tarefa p{
+    color: #666;
+    font-size: 14px;
+}
+
+.tarefa-pendente{
+    border-left: 6px solid #dc3545;
+}
+
+.tarefa-concluida{
+    border-left: 6px solid #28a745;
+}
+
+.acoes{
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+.acoes button{
+    background: transparent;
+    color: #666;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.acoes button:hover{
+    background-color: #e9d5ff;
+    color: #8400ff;
+}
+
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarefa{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .acoes{
+        margin-top: 15px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .header-botoes{
+        width: 100%;
+        justify-content: center;
+    }
+
+}

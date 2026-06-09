@@ -1,0 +1,97 @@
+.form-tarefa{
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.campo{
+    margin-bottom: 20px;
+}
+
+.campo label{
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.campo input,
+.campo textarea{
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo textarea:focus{
+    outline: none;
+
+    border-color: #8400ff;
+}
+
+.acoes-form{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-salvar{
+    background-color: #8400ff;
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.btn-limpar{
+    background-color: transparent;
+
+    border: 1px solid #ddd;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.btn-limpar:hover{
+    background-color: #e9d5ff;
+    color: #8400ff;
+}
+
+.btn-voltar{
+    background-color: white;
+    color: #8400ff;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.btn-voltar:hover{
+    transform: translateY(-2px);
+}
